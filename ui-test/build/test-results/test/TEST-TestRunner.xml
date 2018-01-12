@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="n01439" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Feature: Test stuff is wired up properly
+
+  Scenario:                                          ?[90m# test.feature:7?[0m
+    ?[32mGiven ?[0m?[32mUser navigates to ?[0m?[32m?[1mhttps://www.google.co.uk?[0m ?[90m# TestStepDefs.userNavigatesToPage(String)?[0m
+    ?[32mWhen ?[0m?[32mUser types ?[0m?[32m?[1mwik?[0m?[32m in Google search bar?[0m         ?[90m# TestStepDefs.userTypes(String)?[0m
+    ?[32mAnd ?[0m?[32mUser types ?[0m?[32m?[1mipe?[0m?[32m in Google search bar?[0m          ?[90m# TestStepDefs.userTypes(String)?[0m
+    ?[32mAnd ?[0m?[32mUser types ?[0m?[32m?[1mdia?[0m?[32m in Google search bar?[0m          ?[90m# TestStepDefs.userTypes(String)?[0m
+    ?[32mThen ?[0m?[32mGoogle URL contains ?[0m?[32m?[1mwikipedia?[0m               ?[90m# TestStepDefs.googleSearchBarContains(String)?[0m
+
+2 Scenarios (?[32m2 passed?[0m)
+7 Steps (?[32m7 passed?[0m)
+0m5.019s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

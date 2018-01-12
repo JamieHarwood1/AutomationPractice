@@ -1,0 +1,4 @@
+rootProject.name = 'automationPractice'
+include 'ui-test'
+include 'framework'
+
