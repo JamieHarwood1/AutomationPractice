@@ -16,4 +16,6 @@ dependencies {
    	compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: '3.4.0'
 	compile "org.projectlombok:lombok:1.16.14"
 	compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+
+	compile "org.springframework.boot:spring-boot:1.5.1.RELEASE"
 }

@@ -15,11 +15,12 @@ import java.util.Objects;
 public class BaseDriver
 {
 	private static WebDriver driver;
-	private String exeLocation = "/exeDrivers/chromedriver.exe";
-	private boolean acceptSSLCerts = true;
+	private DriverProperties properties;
 
-	public BaseDriver()
+	public BaseDriver(final DriverProperties properties)
 	{
+		this.properties = properties;
+
 		if (Objects.isNull(driver))
 		{
 			driver = openBrowser();
@@ -29,12 +30,12 @@ public class BaseDriver
 	public WebDriver localBrowser()
 	{
 		final DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, acceptSSLCerts);
+		capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, properties.isAcceptSSLCertificates());
 
 		try
 		{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
-														  exeLocation);
+														  properties.getExeLocation());
 			return new ChromeDriver(capabilities);
 		}
 		catch (final Exception ex)
