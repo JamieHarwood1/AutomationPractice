@@ -1,7 +1,7 @@
 package configurations;
 
-import automationFramework.BaseDriver;
-import automationFramework.DriverProperties;
+import driver.BaseDriver;
+import driver.DriverProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package automationFramework;
+package driver;
 
 import lombok.Getter;
 import lombok.Setter;

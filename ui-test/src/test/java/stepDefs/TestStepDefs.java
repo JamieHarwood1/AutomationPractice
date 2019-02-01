@@ -1,6 +1,6 @@
 package stepDefs;
 
-import automationFramework.BaseDriver;
+import driver.BaseDriver;
 import configurations.DriverConfig;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -52,6 +52,6 @@ public class TestStepDefs
 	@Then("^Google URL contains (.*)$")
 	public void googleSearchBarContains(final String term) throws Throwable
 	{
-		Assert.assertTrue(driver.getCurrentUrl().contains("q="+term));
+		Assert.assertTrue(driver.getCurrentUrl().contains("q=" + term));
 	}
 }
